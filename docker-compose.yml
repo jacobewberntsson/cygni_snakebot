@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  snakebot:
+    build: .
+    working_dir: /snakebot
+    volumes:
+      - .:/snakebot
+    command: make run
